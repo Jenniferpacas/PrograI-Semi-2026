@@ -24,7 +24,7 @@ namespace MiprimeraAplicacion
 
         private void btnSaludo_Click(object sender, EventArgs e)
         {
-            MessageBox.Show("Hola chicos a progra I Vienbenidos");
+            MessageBox.Show("Hola chicos a progra I Bienbenidos a Programacion I");
         }
     }
 }
