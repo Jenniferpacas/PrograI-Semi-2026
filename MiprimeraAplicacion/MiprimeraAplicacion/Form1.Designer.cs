@@ -34,15 +34,15 @@
             this.txtNum2 = new System.Windows.Forms.TextBox();
             this.lblNum2 = new System.Windows.Forms.Label();
             this.lblRespuesta = new System.Windows.Forms.Label();
-            this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.radioButton1 = new System.Windows.Forms.RadioButton();
-            this.radioButton2 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.radioButton5 = new System.Windows.Forms.RadioButton();
-            this.radioButton6 = new System.Windows.Forms.RadioButton();
-            this.radioButton7 = new System.Windows.Forms.RadioButton();
-            this.groupBox1.SuspendLayout();
+            this.grbOpciones = new System.Windows.Forms.GroupBox();
+            this.rdbSuma = new System.Windows.Forms.RadioButton();
+            this.rdbResta = new System.Windows.Forms.RadioButton();
+            this.rdbMultiplicacion = new System.Windows.Forms.RadioButton();
+            this.rdbDivision = new System.Windows.Forms.RadioButton();
+            this.rdbExponente = new System.Windows.Forms.RadioButton();
+            this.rdbRaiz = new System.Windows.Forms.RadioButton();
+            this.rdbFactorial = new System.Windows.Forms.RadioButton();
+            this.grbOpciones.SuspendLayout();
             this.SuspendLayout();
             // 
             // lblNum1
@@ -100,105 +100,100 @@
             this.lblRespuesta.TabIndex = 5;
             this.lblRespuesta.Text = "Respuesta?";
             // 
-            // groupBox1
+            // grbOpciones
             // 
-            this.groupBox1.Controls.Add(this.radioButton7);
-            this.groupBox1.Controls.Add(this.radioButton6);
-            this.groupBox1.Controls.Add(this.radioButton5);
-            this.groupBox1.Controls.Add(this.radioButton4);
-            this.groupBox1.Controls.Add(this.radioButton3);
-            this.groupBox1.Controls.Add(this.radioButton2);
-            this.groupBox1.Controls.Add(this.radioButton1);
-            this.groupBox1.Location = new System.Drawing.Point(463, 62);
-            this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Size = new System.Drawing.Size(291, 322);
-            this.groupBox1.TabIndex = 6;
-            this.groupBox1.TabStop = false;
-            this.groupBox1.Text = "groupBox1";
+            this.grbOpciones.Controls.Add(this.rdbFactorial);
+            this.grbOpciones.Controls.Add(this.rdbRaiz);
+            this.grbOpciones.Controls.Add(this.rdbExponente);
+            this.grbOpciones.Controls.Add(this.rdbDivision);
+            this.grbOpciones.Controls.Add(this.rdbMultiplicacion);
+            this.grbOpciones.Controls.Add(this.rdbResta);
+            this.grbOpciones.Controls.Add(this.rdbSuma);
+            this.grbOpciones.Location = new System.Drawing.Point(463, 62);
+            this.grbOpciones.Name = "grbOpciones";
+            this.grbOpciones.Size = new System.Drawing.Size(291, 322);
+            this.grbOpciones.TabIndex = 6;
+            this.grbOpciones.TabStop = false;
+            this.grbOpciones.Text = "Opciones ";
             // 
-            // radioButton1
+            // rdbSuma
             // 
-            this.radioButton1.AutoSize = true;
-            this.radioButton1.Location = new System.Drawing.Point(31, 34);
-            this.radioButton1.Name = "radioButton1";
-            this.radioButton1.Size = new System.Drawing.Size(103, 20);
-            this.radioButton1.TabIndex = 0;
-            this.radioButton1.TabStop = true;
-            this.radioButton1.Text = "radioButton1";
-            this.radioButton1.UseVisualStyleBackColor = true;
+            this.rdbSuma.AutoSize = true;
+            this.rdbSuma.Location = new System.Drawing.Point(31, 34);
+            this.rdbSuma.Name = "rdbSuma";
+            this.rdbSuma.Size = new System.Drawing.Size(63, 20);
+            this.rdbSuma.TabIndex = 0;
+            this.rdbSuma.Text = "Suma";
+            this.rdbSuma.UseVisualStyleBackColor = true;
             // 
-            // radioButton2
+            // rdbResta
             // 
-            this.radioButton2.AutoSize = true;
-            this.radioButton2.Location = new System.Drawing.Point(32, 60);
-            this.radioButton2.Name = "radioButton2";
-            this.radioButton2.Size = new System.Drawing.Size(103, 20);
-            this.radioButton2.TabIndex = 1;
-            this.radioButton2.TabStop = true;
-            this.radioButton2.Text = "radioButton2";
-            this.radioButton2.UseVisualStyleBackColor = true;
+            this.rdbResta.AutoSize = true;
+            this.rdbResta.Checked = true;
+            this.rdbResta.Location = new System.Drawing.Point(32, 60);
+            this.rdbResta.Name = "rdbResta";
+            this.rdbResta.Size = new System.Drawing.Size(64, 20);
+            this.rdbResta.TabIndex = 1;
+            this.rdbResta.TabStop = true;
+            this.rdbResta.Text = "Resta";
+            this.rdbResta.UseVisualStyleBackColor = true;
             // 
-            // radioButton3
+            // rdbMultiplicacion
             // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Location = new System.Drawing.Point(32, 90);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(103, 20);
-            this.radioButton3.TabIndex = 2;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "radioButton3";
-            this.radioButton3.UseVisualStyleBackColor = true;
+            this.rdbMultiplicacion.AutoSize = true;
+            this.rdbMultiplicacion.Location = new System.Drawing.Point(32, 90);
+            this.rdbMultiplicacion.Name = "rdbMultiplicacion";
+            this.rdbMultiplicacion.Size = new System.Drawing.Size(109, 20);
+            this.rdbMultiplicacion.TabIndex = 2;
+            this.rdbMultiplicacion.Text = "Multiplicacion";
+            this.rdbMultiplicacion.UseVisualStyleBackColor = true;
             // 
-            // radioButton4
+            // rdbDivision
             // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Location = new System.Drawing.Point(32, 119);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(103, 20);
-            this.radioButton4.TabIndex = 3;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "radioButton4";
-            this.radioButton4.UseVisualStyleBackColor = true;
+            this.rdbDivision.AutoSize = true;
+            this.rdbDivision.Location = new System.Drawing.Point(32, 119);
+            this.rdbDivision.Name = "rdbDivision";
+            this.rdbDivision.Size = new System.Drawing.Size(79, 20);
+            this.rdbDivision.TabIndex = 3;
+            this.rdbDivision.Text = "Division ";
+            this.rdbDivision.UseVisualStyleBackColor = true;
             // 
-            // radioButton5
+            // rdbExponente
             // 
-            this.radioButton5.AutoSize = true;
-            this.radioButton5.Location = new System.Drawing.Point(32, 150);
-            this.radioButton5.Name = "radioButton5";
-            this.radioButton5.Size = new System.Drawing.Size(103, 20);
-            this.radioButton5.TabIndex = 4;
-            this.radioButton5.TabStop = true;
-            this.radioButton5.Text = "radioButton5";
-            this.radioButton5.UseVisualStyleBackColor = true;
+            this.rdbExponente.AutoSize = true;
+            this.rdbExponente.Location = new System.Drawing.Point(32, 150);
+            this.rdbExponente.Name = "rdbExponente";
+            this.rdbExponente.Size = new System.Drawing.Size(92, 20);
+            this.rdbExponente.TabIndex = 4;
+            this.rdbExponente.Text = "Exponente";
+            this.rdbExponente.UseVisualStyleBackColor = true;
             // 
-            // radioButton6
+            // rdbRaiz
             // 
-            this.radioButton6.AutoSize = true;
-            this.radioButton6.Location = new System.Drawing.Point(31, 176);
-            this.radioButton6.Name = "radioButton6";
-            this.radioButton6.Size = new System.Drawing.Size(103, 20);
-            this.radioButton6.TabIndex = 5;
-            this.radioButton6.TabStop = true;
-            this.radioButton6.Text = "radioButton6";
-            this.radioButton6.UseVisualStyleBackColor = true;
+            this.rdbRaiz.AutoSize = true;
+            this.rdbRaiz.Location = new System.Drawing.Point(31, 176);
+            this.rdbRaiz.Name = "rdbRaiz";
+            this.rdbRaiz.Size = new System.Drawing.Size(55, 20);
+            this.rdbRaiz.TabIndex = 5;
+            this.rdbRaiz.Text = "Raiz";
+            this.rdbRaiz.UseVisualStyleBackColor = true;
             // 
-            // radioButton7
+            // rdbFactorial
             // 
-            this.radioButton7.AutoSize = true;
-            this.radioButton7.Location = new System.Drawing.Point(31, 202);
-            this.radioButton7.Name = "radioButton7";
-            this.radioButton7.Size = new System.Drawing.Size(103, 20);
-            this.radioButton7.TabIndex = 6;
-            this.radioButton7.TabStop = true;
-            this.radioButton7.Text = "radioButton7";
-            this.radioButton7.UseVisualStyleBackColor = true;
+            this.rdbFactorial.AutoSize = true;
+            this.rdbFactorial.Location = new System.Drawing.Point(31, 202);
+            this.rdbFactorial.Name = "rdbFactorial";
+            this.rdbFactorial.Size = new System.Drawing.Size(80, 20);
+            this.rdbFactorial.TabIndex = 6;
+            this.rdbFactorial.Text = "Factorial";
+            this.rdbFactorial.UseVisualStyleBackColor = true;
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(912, 502);
-            this.Controls.Add(this.groupBox1);
+            this.Controls.Add(this.grbOpciones);
             this.Controls.Add(this.lblRespuesta);
             this.Controls.Add(this.txtNum2);
             this.Controls.Add(this.lblNum2);
@@ -208,8 +203,8 @@
             this.Name = "Form1";
             this.Text = "Calculadora basica";
             this.Load += new System.EventHandler(this.Form1_Load);
-            this.groupBox1.ResumeLayout(false);
-            this.groupBox1.PerformLayout();
+            this.grbOpciones.ResumeLayout(false);
+            this.grbOpciones.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -223,14 +218,14 @@
         private System.Windows.Forms.TextBox txtNum2;
         private System.Windows.Forms.Label lblNum2;
         private System.Windows.Forms.Label lblRespuesta;
-        private System.Windows.Forms.GroupBox groupBox1;
-        private System.Windows.Forms.RadioButton radioButton7;
-        private System.Windows.Forms.RadioButton radioButton6;
-        private System.Windows.Forms.RadioButton radioButton5;
-        private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.RadioButton radioButton2;
-        private System.Windows.Forms.RadioButton radioButton1;
+        private System.Windows.Forms.GroupBox grbOpciones;
+        private System.Windows.Forms.RadioButton rdbFactorial;
+        private System.Windows.Forms.RadioButton rdbRaiz;
+        private System.Windows.Forms.RadioButton rdbExponente;
+        private System.Windows.Forms.RadioButton rdbDivision;
+        private System.Windows.Forms.RadioButton rdbMultiplicacion;
+        private System.Windows.Forms.RadioButton rdbResta;
+        private System.Windows.Forms.RadioButton rdbSuma;
     }
 }
 
