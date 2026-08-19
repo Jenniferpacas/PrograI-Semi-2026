@@ -28,123 +28,75 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lblA = new System.Windows.Forms.Label();
-            this.lblDe = new System.Windows.Forms.Label();
-            this.lblCantidad = new System.Windows.Forms.Label();
-            this.btnCalcular = new System.Windows.Forms.Button();
-            this.txtCantidad = new System.Windows.Forms.TextBox();
-            this.cboDE = new System.Windows.Forms.ComboBox();
             this.lblRespuesta = new System.Windows.Forms.Label();
-            this.cboA = new System.Windows.Forms.ComboBox();
+            this.txtSerie = new System.Windows.Forms.TextBox();
+            this.lblSerie = new System.Windows.Forms.Label();
+            this.ltsRespuesta = new System.Windows.Forms.ListBox();
+            this.btnCalcular = new System.Windows.Forms.Button();
             this.SuspendLayout();
-            // 
-            // lblA
-            // 
-            this.lblA.AutoSize = true;
-            this.lblA.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblA.Location = new System.Drawing.Point(443, 61);
-            this.lblA.Name = "lblA";
-            this.lblA.Size = new System.Drawing.Size(34, 26);
-            this.lblA.TabIndex = 0;
-            this.lblA.Text = "A:";
-            // 
-            // lblDe
-            // 
-            this.lblDe.AutoSize = true;
-            this.lblDe.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblDe.Location = new System.Drawing.Point(75, 61);
-            this.lblDe.Name = "lblDe";
-            this.lblDe.Size = new System.Drawing.Size(44, 26);
-            this.lblDe.TabIndex = 1;
-            this.lblDe.Text = "De:";
-            // 
-            // lblCantidad
-            // 
-            this.lblCantidad.AutoSize = true;
-            this.lblCantidad.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblCantidad.Location = new System.Drawing.Point(75, 201);
-            this.lblCantidad.Name = "lblCantidad";
-            this.lblCantidad.Size = new System.Drawing.Size(101, 26);
-            this.lblCantidad.TabIndex = 2;
-            this.lblCantidad.Text = "Cantidad:";
-            // 
-            // btnCalcular
-            // 
-            this.btnCalcular.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCalcular.Location = new System.Drawing.Point(145, 338);
-            this.btnCalcular.Name = "btnCalcular";
-            this.btnCalcular.Size = new System.Drawing.Size(215, 85);
-            this.btnCalcular.TabIndex = 3;
-            this.btnCalcular.Text = "Calcular";
-            this.btnCalcular.UseVisualStyleBackColor = true;
-            this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click_1);
-            // 
-            // txtCantidad
-            // 
-            this.txtCantidad.Location = new System.Drawing.Point(182, 205);
-            this.txtCantidad.Name = "txtCantidad";
-            this.txtCantidad.Size = new System.Drawing.Size(264, 22);
-            this.txtCantidad.TabIndex = 4;
-            // 
-            // cboDE
-            // 
-            this.cboDE.FormattingEnabled = true;
-            this.cboDE.Items.AddRange(new object[] {
-            "Metros ",
-            "cm",
-            "Pulgadas ",
-            "Pies ",
-            "Varas ",
-            "Yardas ",
-            "Km ",
-            "Millas "});
-            this.cboDE.Location = new System.Drawing.Point(140, 61);
-            this.cboDE.Name = "cboDE";
-            this.cboDE.Size = new System.Drawing.Size(253, 24);
-            this.cboDE.TabIndex = 5;
             // 
             // lblRespuesta
             // 
             this.lblRespuesta.AutoSize = true;
-            this.lblRespuesta.Font = new System.Drawing.Font("Times New Roman", 13.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblRespuesta.Location = new System.Drawing.Point(506, 205);
+            this.lblRespuesta.Location = new System.Drawing.Point(84, 198);
+            this.lblRespuesta.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblRespuesta.Name = "lblRespuesta";
-            this.lblRespuesta.Size = new System.Drawing.Size(127, 26);
-            this.lblRespuesta.TabIndex = 6;
-            this.lblRespuesta.Text = "Respuesta: ?";
+            this.lblRespuesta.Size = new System.Drawing.Size(46, 16);
+            this.lblRespuesta.TabIndex = 11;
+            this.lblRespuesta.Text = "Pares:";
             // 
-            // cboA
+            // txtSerie
             // 
-            this.cboA.FormattingEnabled = true;
-            this.cboA.Items.AddRange(new object[] {
-            "Metros ",
-            "cm",
-            "Pulgadas ",
-            "Pies ",
-            "Varas ",
-            "Yardas ",
-            "Km ",
-            "Millas "});
-            this.cboA.Location = new System.Drawing.Point(483, 65);
-            this.cboA.Name = "cboA";
-            this.cboA.Size = new System.Drawing.Size(253, 24);
-            this.cboA.TabIndex = 7;
+            this.txtSerie.Location = new System.Drawing.Point(137, 135);
+            this.txtSerie.Margin = new System.Windows.Forms.Padding(4);
+            this.txtSerie.Name = "txtSerie";
+            this.txtSerie.Size = new System.Drawing.Size(323, 22);
+            this.txtSerie.TabIndex = 10;
+            // 
+            // lblSerie
+            // 
+            this.lblSerie.AutoSize = true;
+            this.lblSerie.Location = new System.Drawing.Point(84, 135);
+            this.lblSerie.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.lblSerie.Name = "lblSerie";
+            this.lblSerie.Size = new System.Drawing.Size(42, 16);
+            this.lblSerie.TabIndex = 9;
+            this.lblSerie.Text = "Serie:";
+            // 
+            // ltsRespuesta
+            // 
+            this.ltsRespuesta.FormattingEnabled = true;
+            this.ltsRespuesta.ItemHeight = 16;
+            this.ltsRespuesta.Location = new System.Drawing.Point(88, 217);
+            this.ltsRespuesta.Margin = new System.Windows.Forms.Padding(4);
+            this.ltsRespuesta.Name = "ltsRespuesta";
+            this.ltsRespuesta.Size = new System.Drawing.Size(219, 228);
+            this.ltsRespuesta.TabIndex = 8;
+            // 
+            // btnCalcular
+            // 
+            this.btnCalcular.Font = new System.Drawing.Font("Times New Roman", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCalcular.Location = new System.Drawing.Point(349, 296);
+            this.btnCalcular.Margin = new System.Windows.Forms.Padding(4);
+            this.btnCalcular.Name = "btnCalcular";
+            this.btnCalcular.Size = new System.Drawing.Size(253, 75);
+            this.btnCalcular.TabIndex = 7;
+            this.btnCalcular.Text = "Calcular";
+            this.btnCalcular.UseVisualStyleBackColor = true;
+            this.btnCalcular.Click += new System.EventHandler(this.btnCalcular_Click_2);
             // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(912, 502);
-            this.Controls.Add(this.cboA);
+            this.ClientSize = new System.Drawing.Size(660, 502);
             this.Controls.Add(this.lblRespuesta);
-            this.Controls.Add(this.cboDE);
-            this.Controls.Add(this.txtCantidad);
+            this.Controls.Add(this.txtSerie);
+            this.Controls.Add(this.lblSerie);
+            this.Controls.Add(this.ltsRespuesta);
             this.Controls.Add(this.btnCalcular);
-            this.Controls.Add(this.lblCantidad);
-            this.Controls.Add(this.lblDe);
-            this.Controls.Add(this.lblA);
             this.Name = "Form1";
-            this.Text = "Calculadora basica";
+            this.Text = "Combersores de longitud ";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -153,14 +105,11 @@
 
         #endregion
 
-        private System.Windows.Forms.Label lblA;
-        private System.Windows.Forms.Label lblDe;
-        private System.Windows.Forms.Label lblCantidad;
-        private System.Windows.Forms.Button btnCalcular;
-        private System.Windows.Forms.TextBox txtCantidad;
-        private System.Windows.Forms.ComboBox cboDE;
         private System.Windows.Forms.Label lblRespuesta;
-        private System.Windows.Forms.ComboBox cboA;
+        private System.Windows.Forms.TextBox txtSerie;
+        private System.Windows.Forms.Label lblSerie;
+        private System.Windows.Forms.ListBox ltsRespuesta;
+        private System.Windows.Forms.Button btnCalcular;
     }
 }
 

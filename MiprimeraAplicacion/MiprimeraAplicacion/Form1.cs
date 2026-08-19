@@ -16,24 +16,19 @@ namespace MiprimeraAplicacion
         {
             InitializeComponent();
         }
-        /*Metros, Cm, Pulgadas, Pies, Varas, Yardas, Km, Millas
-         */
-
-        Double[] valores = { 1, 100, 39.3701, 3.2884, 1.1963, 1.09361, 0.001, 0.0006211371 };
-
+      
         private void Form1_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void btnCalcular_Click_1(object sender, EventArgs e)
+        private void btnCalcular_Click_2(object sender, EventArgs e)
         {
-            int de = cboDE.SelectedIndex, a = cboA.SelectedIndex;
-            double cantidad = Double.Parse(txtCantidad.Text);
-            double respuesta = valores[a] / valores[de] * cantidad;
+            String[] serie = txtSerie.Text.Split(',');
 
-            lblRespuesta.Text = respuesta.ToString();
-
+            ltsRespuesta.DataSource = serie.Select(n => int.Parse(n)).Where(n => n % 2 == 0)
+                .OrderBy(n => n)
+                .ToList();
         }
     }
 }
