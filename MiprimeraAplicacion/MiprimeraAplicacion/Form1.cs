@@ -16,51 +16,23 @@ namespace MiprimeraAplicacion
         {
             InitializeComponent();
         }
+        /*Metros, Cm, Pulgadas, Pies, Varas, Yardas, Km, Millas
+         */
+
+        Double[] valores = { 1, 100, 39.3701, 3.2884, 1.1963, 1.09361, 0.001, 0.0006211371 };
 
         private void Form1_Load(object sender, EventArgs e)
         {
 
         }
 
-        private void btnCalcular_Click(object sender, EventArgs e)
+        private void btnCalcular_Click_1(object sender, EventArgs e)
         {
-            double num1=0, num2=0, resultado=0;
-            num1 = Double.Parse(txtNum1.Text); //txtNum1.Txt > cadena= "5" => 5.0 
-            num2 = Double.Parse(txtNum2.Text);
+            int de = cboDE.SelectedIndex, a = cboA.SelectedIndex;
+            double cantidad = Double.Parse(txtCantidad.Text);
+            double respuesta = valores[a] / valores[de] * cantidad;
 
-            if (rdbSuma.Checked)
-            {
-                resultado = num1 + num2;
-            }
-            if (rdbResta.Checked)
-            {
-                resultado = num1 - num2;
-            }
-            if (rdbMultiplicacion.Checked)
-            {
-                resultado = num1  *  num2;
-            }
-            if (rdbDivision.Checked)
-            {
-                resultado = num1 / num2;
-            }
-            if (rdbExponente.Checked)
-            {
-                resultado = Math.Pow(num1, num2);//elevar num1 a la potencia num2
-            }
-            if (rdbRaiz.Checked)
-            {
-                resultado = Math.Pow(num1, 1 / num2); //Raiz num2 de num1
-            }
-
-            if (rdbFactorial.Checked) { //5*4*3*2*1=120
-                resultado = 1;
-                for (int i = 1;i <= num1; i++) {
-                    resultado = resultado* i;
-                   }
-
-            }
-            lblRespuesta.Text = "Respuesta:" + Math.Round(resultado, 4).ToString();
+            lblRespuesta.Text = respuesta.ToString();
 
         }
     }
