@@ -36,7 +36,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(660, 502);
             this.Name = "Form1";
-            this.Text = "Combersores de longitud ";
+            this.Text = "Gestion del tiempo ";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.ResumeLayout(false);
 
