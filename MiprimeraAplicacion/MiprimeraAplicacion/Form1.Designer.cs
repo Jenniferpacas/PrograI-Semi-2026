@@ -29,9 +29,9 @@
         private void InitializeComponent()
         {
             this.lblRespuesta = new System.Windows.Forms.Label();
-            this.txtSerie = new System.Windows.Forms.TextBox();
-            this.lblSerie = new System.Windows.Forms.Label();
             this.ltsRespuesta = new System.Windows.Forms.ListBox();
+            this.lblSerie = new System.Windows.Forms.Label();
+            this.txtSerie = new System.Windows.Forms.TextBox();
             this.btnCalcular = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
@@ -45,13 +45,15 @@
             this.lblRespuesta.TabIndex = 11;
             this.lblRespuesta.Text = "Pares:";
             // 
-            // txtSerie
+            // ltsRespuesta
             // 
-            this.txtSerie.Location = new System.Drawing.Point(137, 135);
-            this.txtSerie.Margin = new System.Windows.Forms.Padding(4);
-            this.txtSerie.Name = "txtSerie";
-            this.txtSerie.Size = new System.Drawing.Size(323, 22);
-            this.txtSerie.TabIndex = 10;
+            this.ltsRespuesta.FormattingEnabled = true;
+            this.ltsRespuesta.ItemHeight = 16;
+            this.ltsRespuesta.Location = new System.Drawing.Point(88, 217);
+            this.ltsRespuesta.Margin = new System.Windows.Forms.Padding(4);
+            this.ltsRespuesta.Name = "ltsRespuesta";
+            this.ltsRespuesta.Size = new System.Drawing.Size(219, 228);
+            this.ltsRespuesta.TabIndex = 8;
             // 
             // lblSerie
             // 
@@ -63,15 +65,13 @@
             this.lblSerie.TabIndex = 9;
             this.lblSerie.Text = "Serie:";
             // 
-            // ltsRespuesta
+            // txtSerie
             // 
-            this.ltsRespuesta.FormattingEnabled = true;
-            this.ltsRespuesta.ItemHeight = 16;
-            this.ltsRespuesta.Location = new System.Drawing.Point(88, 217);
-            this.ltsRespuesta.Margin = new System.Windows.Forms.Padding(4);
-            this.ltsRespuesta.Name = "ltsRespuesta";
-            this.ltsRespuesta.Size = new System.Drawing.Size(219, 228);
-            this.ltsRespuesta.TabIndex = 8;
+            this.txtSerie.Location = new System.Drawing.Point(137, 135);
+            this.txtSerie.Margin = new System.Windows.Forms.Padding(4);
+            this.txtSerie.Name = "txtSerie";
+            this.txtSerie.Size = new System.Drawing.Size(323, 22);
+            this.txtSerie.TabIndex = 10;
             // 
             // btnCalcular
             // 
@@ -106,9 +106,9 @@
         #endregion
 
         private System.Windows.Forms.Label lblRespuesta;
-        private System.Windows.Forms.TextBox txtSerie;
-        private System.Windows.Forms.Label lblSerie;
         private System.Windows.Forms.ListBox ltsRespuesta;
+        private System.Windows.Forms.Label lblSerie;
+        private System.Windows.Forms.TextBox txtSerie;
         private System.Windows.Forms.Button btnCalcular;
     }
 }
