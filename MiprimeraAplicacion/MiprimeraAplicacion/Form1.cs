@@ -24,11 +24,44 @@ namespace MiprimeraAplicacion
 
         private void btnCalcular_Click_2(object sender, EventArgs e)
         {
-            String[] serie = txtSerie.Text.Split(',');
+          
+        }
 
-            ltsRespuesta.DataSource = serie.Select(n => int.Parse(n)).Where(n => n % 2 == 0)
-                .OrderBy(n => n)
-                .ToList();
+        private void listBox1_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnCalcular_Click(object sender, EventArgs e)
+        {
+           try
+            {
+                int n = int.Parse(txtN.Text);
+                int acumulado = 0;
+                ltsRespuesta.Items.Clear();
+                for (int i = 1; i <= n; i++)
+                {
+                    acumulado += i;
+                    ltsRespuesta.Items.Add("Mes " + i + " - Acumulado: " + acumulado);
+                }
+            }
+
+            catch (Exception)
+            {
+                MessageBox.Show("Por favor ingrese el número de meses correctamente");
+            }
+
+        }
+
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            txtN.Clear();
+            ltsRespuesta.Items.Clear();
+        }
+
+        private void lblTitulo_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
