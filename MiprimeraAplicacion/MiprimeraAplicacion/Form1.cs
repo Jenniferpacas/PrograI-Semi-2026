@@ -22,13 +22,39 @@ namespace MiprimeraAplicacion
 
         }
 
-        private void btnCalcular_Click_2(object sender, EventArgs e)
+        private void btnCalcular_Click(object sender, EventArgs e)
         {
-            String[] serie = txtSerie.Text.Split(',');
+            double sueldo = Double.Parse(txtsueldo.Text);
 
-            ltsRespuesta.DataSource = serie.Select(n => int.Parse(n)).Where(n => n % 2 == 0)
-                .OrderBy(n => n)
-                .ToList();
+            double isss = 0;
+            double afp = 0;
+            double isr = 0;
+            double total = 0;
+            double sueldoNeto = 0;
+
+
+            // ISSS 3%
+            isss = sueldo * 0.03;
+
+            // AFP 5.62%
+            afp = sueldo * 0.0562;
+
+            // ISR 7.25%
+            isr = sueldo * 0.0725;
+
+            // Total de deducciones
+            total = isss + afp + isr;
+
+            // Sueldo neto
+            sueldoNeto = sueldo - total;
+            // Mostrar resultados
+            txtISSS.Text = "$ " + Math.Round(isss, 2);
+            txtAFP.Text = "$ " + Math.Round(afp, 2);
+            txtISR.Text = "$ " + Math.Round(isr, 2);
+            txtTOTAL.Text = "$ " + Math.Round(total, 2);
+            txtSueldoNeto.Text = "$ " + Math.Round(sueldoNeto, 2);
+
+
         }
     }
 }
