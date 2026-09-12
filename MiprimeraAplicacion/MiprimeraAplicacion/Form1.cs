@@ -16,7 +16,8 @@ namespace MiprimeraAplicacion
         {
             InitializeComponent();
         }
-      
+
+        Estadistica objEsta = new Estadistica();
         private void Form1_Load(object sender, EventArgs e)
         {
 
@@ -26,14 +27,31 @@ namespace MiprimeraAplicacion
 
         private void btnProcesar_Click(object sender, EventArgs e)
         {
-            String[]serie = txtSerie.Text.Split (',');
+
+            limpiar();
+            String[] serie = txtSerie.Text.Split(',');
             double[] miSerie = serie.Select(n => double.Parse(n)).ToArray();
-            double suma = 0;
-            for (int i = 0; i< serie.Length; i++){
-                suma += miSerie[i];                
-            }
-            double media = suma / miSerie.Length;
-            ltsValores.Items.Add ("La media es:" + media);
+            double m = objEsta.media(miSerie);
+
+            ltsValores.Items.Add("La media es: " + m);
+            ltsValores.Items.Add("La desviacion estandar: " + objEsta.varianza(miSerie, m));
+            ltsValores.Items.Add("La desviacion tipica: " + objEsta.desviacionTipica(miSerie, m));
+            ltsValores.Items.Add("La media armonica: " + objEsta.armonica(miSerie));
+        }
+
+        private void ltsValores_SelectedIndexChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnLimpiar_Click(object sender, EventArgs e)
+        {
+            limpiar();
+        }
+        private void limpiar()
+        {
+            ltsValores.Items.Clear();
+            //txtSerie.Clear();
+        }
         }
     }
-}
